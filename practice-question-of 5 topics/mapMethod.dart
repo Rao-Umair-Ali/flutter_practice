@@ -33,6 +33,8 @@ void main() {
   stdsdata.clear();
   print(stdsdata);
   // ___________________Method#9______________________________
-
+  print(stdsdata.length);
   // ___________________Method#10______________________________
+  print(stdsdata.isEmpty);
+  print(stdsdata.isNotEmpty);
 }
