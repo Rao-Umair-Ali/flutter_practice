@@ -12,4 +12,18 @@ void main() {
   // ___________________Method#4______________________________
   Map map = stdNumbers.asMap();
   print(map.keys.toList());
+  // ___________________Method#5______________________________
+  print(stdNumbers.contains(50));
+  // ___________________Method#6______________________________
+  print(stdNumbers.elementAt(7));
+
+  // ___________________Method#7______________________________
+  print(stdNumbers.removeAt(7));
+  // ___________________Method#8______________________________
+  print(stdNumbers.indexOf(664));
+  // ___________________Method#9______________________________
+  print(stdNumbers.getRange(0, 7));
+  // ___________________Method#10______________________________
+  stdNumbers.clear();
+  print(stdNumbers);
 }
