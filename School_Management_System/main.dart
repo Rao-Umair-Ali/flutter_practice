@@ -23,6 +23,8 @@ main() {
   if (userEmail == dataPerson["email"] &&
       userPassword == dataPerson["password"]) {
     print("Succesfullly Login");
+    print(
+        "if you want to change your password type 'p' \n if you want to see pending fees press 'p' \n if you want to pay fees press 'c' \n if you want delete your account press d ");
   } else {
     print("you give me wrong credential");
   }
