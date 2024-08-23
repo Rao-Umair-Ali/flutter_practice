@@ -1,0 +1,7 @@
+//------------------------------University Management system ----------------------------------------------------
+//------------------------------Features---------------------------------------------
+1 user can register their account
+2 user can Login their account
+3 Admin can Login their account
+4 user can see user info and account
+5 user can enroll 
