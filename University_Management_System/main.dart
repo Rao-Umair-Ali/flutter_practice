@@ -12,7 +12,7 @@ main() {
     print("1 : Admin portal");
     print("2: Student portal");
     String? input = stdin.readLineSync();
-//-----------------------user portal-------------------------------
+//-----------------------Admin portal-------------------------------
 
     if (input == "1") {
       print("1 : Register your account");
