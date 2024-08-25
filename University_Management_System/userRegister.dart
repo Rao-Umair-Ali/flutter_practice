@@ -2,9 +2,9 @@ import 'dart:io';
 
 class Register {
   List info = [];
-  Map details = {};
 
   void information() {
+    Map details = {};
     print("Give me your user name:");
     String? name = stdin.readLineSync();
     details["name"] = name;
@@ -30,11 +30,17 @@ class Register {
 
     print("Give me your password:");
     String? userpassword = stdin.readLineSync();
-
-    if (useremail == details["email"] && userpassword == details["password"]) {
-      print("User successfully logged in.");
-    } else {
-      print("Kindly provide correct credentials.");
+    bool isfound = false;
+    for (var details in info) {
+      if (useremail == details["email"] &&
+          userpassword == details["password"]) {
+        print("User successfully logged in.");
+        isfound == true;
+        break;
+      }
+    }
+    if (!isfound) {
+      print("give me correct credential");
     }
   }
 }
