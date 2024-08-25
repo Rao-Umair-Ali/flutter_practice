@@ -13,6 +13,8 @@ main() {
     print("2: Student");
     String? input = stdin.readLineSync();
     if (input == "1") {
+      print("1 : Register your account");
+      print("2: Login your account");
       if (input == "1") {
         newAdmin.information();
       } else if (input == "2") {
@@ -21,6 +23,8 @@ main() {
     }
     //------------------------------------------------------
     else if (input == "2") {
+      print("1 : Register your account");
+      print("2: Login your account");
       if (input == "1") {
         newone.information();
       } else if (input == "2") {
