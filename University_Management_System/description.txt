@@ -3,5 +3,13 @@
 1 user can register their account
 2 user can Login their account
 3 Admin can Login their account
-4 user can see user info and account
-5 user can enroll 
+4 Admin can see user info and account
+5 user can enroll in different subject
+6 student pay Fees
+7 Student mark Attendence
+8 student see paid fees 
+9 student can exit 
+10 admin can delete user
+11 admin can add user 
+
+
