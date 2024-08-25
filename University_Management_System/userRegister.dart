@@ -1,46 +1,59 @@
 import 'dart:io';
 
-class Register {
-  List info = [];
+class User {
+  List<Map<String, String>> userInfo = [];
 
-  void information() {
-    Map details = {};
-    print("Give me your user name:");
+  void register() {
+    Map<String, String> details = {};
+    print("Enter your username:");
     String? name = stdin.readLineSync();
-    details["name"] = name;
+    details["name"] = name ?? "";
 
-    print("Give me your email:");
+    print("Enter your email:");
     String? email = stdin.readLineSync();
-    details["email"] = email;
+    details["email"] = email ?? "";
 
-    print("Give me your password:");
+    print("Enter your password:");
     String? password = stdin.readLineSync();
-    details["password"] = password;
-    info.add(details);
+    details["password"] = password ?? "";
+    userInfo.add(details);
 
-    print(info);
-
-    print("User successfully created.");
+    print("User successfully registered.");
   }
 
   void login() {
-    print("Login:");
-    print("Give me your email:");
-    String? useremail = stdin.readLineSync();
+    print("Enter your email:");
+    String? email = stdin.readLineSync();
 
-    print("Give me your password:");
-    String? userpassword = stdin.readLineSync();
-    bool isfound = false;
-    for (var details in info) {
-      if (useremail == details["email"] &&
-          userpassword == details["password"]) {
+    print("Enter your password:");
+    String? password = stdin.readLineSync();
+    bool isFound = false;
+    for (var details in userInfo) {
+      if (email == details["email"] && password == details["password"]) {
         print("User successfully logged in.");
-        isfound == true;
+        isFound = true;
         break;
       }
     }
-    if (!isfound) {
-      print("give me correct credential");
+    if (!isFound) {
+      print("Invalid credentials.");
     }
+  }
+
+  // Placeholder methods for other user functionalities
+  void enrollInSubject() {
+    // Code for subject enrollment
+  }
+
+  void payFees() {
+    // Code for paying fees
+  }
+
+  void markAttendance() {
+    // Code for marking attendance
+  }
+
+  void viewFees() {
+    // Code for viewing paid fees
   }
 }
