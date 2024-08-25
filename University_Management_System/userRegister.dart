@@ -5,8 +5,6 @@ class Register {
   Map details = {};
 
   void information() {
-    print("give me id number");
-
     print("Give me your user name:");
     String? name = stdin.readLineSync();
     details["name"] = name;
