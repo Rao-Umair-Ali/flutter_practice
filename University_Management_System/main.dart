@@ -18,7 +18,9 @@ main() {
       } else if (input == "2") {
         newAdmin.login();
       }
-    } else if (input == "2") {
+    }
+    //------------------------------------------------------
+    else if (input == "2") {
       if (input == "1") {
         newone.information();
       } else if (input == "2") {
